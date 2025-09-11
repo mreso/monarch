@@ -8,6 +8,7 @@ links = "rdmaxcel"
 
 [dependencies]
 cxx = "1.0.119"
+cuda-sys = { path = "../cuda-sys" }
 serde = { version = "1.0.185", features = ["derive", "rc"] }
 
 [build-dependencies]

@@ -628,7 +628,8 @@ pub async fn run() -> Result<(), anyhow::Error> {
 
     // Create process allocator for spawning actors
     let mut alloc = ProcessAllocator::new(Command::new(
-        buck_resources::get("monarch/monarch_rdma/examples/cuda_ping_pong/bootstrap").unwrap(),
+        // buck_resources::get("monarch/monarch_rdma/examples/cuda_ping_pong/bootstrap").unwrap(),
+        "target/debug/cuda_ping_pong_bootstrap", // Quick hack to make this work in OSS debug build
     ));
 
     let device_1_proc_mesh = ProcMesh::allocate(

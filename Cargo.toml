@@ -16,4 +16,5 @@ members = [
     "nccl-sys",
     "rdmaxcel-sys",
     "torch-sys",
+    "monarch_rdma/examples/cuda_ping_pong",
 ]
